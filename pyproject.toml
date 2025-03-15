@@ -7,14 +7,16 @@ authors = [{ name = "Eliot Robson", email = "eliot.robson24@gmail.com" }]
 requires-python = ">=3.10"
 dependencies = []
 
+[project.scripts]
+pl-tools = "pl_tools.canvas:main"
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
 
 [dependency-groups]
-dev = ["ruff>=0.9.9", "mypy>=1.15.0"]
+dev = ["ruff>=0.9.9", "mypy>=1.15.0", "requests", "click"]
 
 
 [tool.uv]
