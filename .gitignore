@@ -1,0 +1,19 @@
+*.pyc
+*.pyo
+*.pyd
+*.d
+*.o
+dist/
+build/
+.backup/
+*.stackdump
+*~
+*.egg-info
+setuptools-*.egg
+.venv
+**/__pycache__
+.coverage
+.hypothesis
+
+# Convenient for development
+playground.py
